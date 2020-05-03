@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Saarthi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -250,12 +251,12 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#action">ACTION</a></li>
-                    <li><a href="#view">VIEW</a></li>
-                    <li><a href="#approve">APPROVE</a></li>
-                    <li><a href="#notify">NOTIFY</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#action">CREDITS</a></li>
+                    <li><a href="#view">APPROVE</a></li>
+                    <li><a href="#repayment">REPAYMENT</a></li>
                     <li><a href="#settings">SETTINGS</a></li>
+                    <li><a href="home.html">LOGOUT</a></li>
                 </ul>
             </div>
         </div>
@@ -279,37 +280,31 @@
         <div class="text-center">
         </div>
         <div class="row slideanim">
-            <div class="col-sm-3 col-xs-12">
-            </div>
-            <div class="col-sm-6 col-xs-12">
+           
+            <div class="col-sm-12 col-xs-12">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading" style="padding:5px;">
-                        <h1 class="text-center" style="font-size:20px;"><!--Warehouse--> </h1>
+                        <h1 class="text-center" style="font-size:20px;">Increase Credits </h1>
                     </div>
                     <div class="panel-body">
                         <div class="row " style="padding-bottom:20px;border-bottom: ridge;">
-                            <div class="col-sm-6 col-xs-12" style="border-right: ridge;">
-                                <button class="btn btn-lg" onClick="document.getElementById('approve').scrollIntoView();">APPROVE CONRACTS</button>
+                            <div class="col-sm-3 col-xs-12" style="border-right: ridge;">
+                                <button class="btn btn-lg" onClick="document.getElementById('approve').scrollIntoView();">Approve Contracts</button>
                                 <img src="Pictures/validation.png" class="img-rounded" alt="" style="height:50%;width:50%;">
                             </div>
-                            <div class="col-sm-6 col-xs-12">
-                                <button class="btn btn-lg" onClick="document.getElementById('notifybank').scrollIntoView();">NOTIFY BANK</button>
+                            <div class="col-sm-3 col-xs-12" style="border-right: ridge;">
+                                <button class="btn btn-lg" onClick="document.getElementById('notifybank').scrollIntoView();">Update Farmer Status</button>
                                 <img src="Pictures/warning.png" class="img-rounded" alt="" style="height:50%;width:50%;">
                             </div>
-                        </div>
-                        <div class="row" style="padding-top:20px;">
-                            <div class="col-sm-6 col-xs-12" style="border-right: ridge;">
-                                <button class="btn btn-lg" onClick="document.getElementById('settings').scrollIntoView();">EDIT PROFILE</button>
+                            <div class="col-sm-3 col-xs-12" style="border-right: ridge;">
+                                <button class="btn btn-lg" onClick="document.getElementById('settings').scrollIntoView();">Edit Warehouse Profile</button>
                                 <img src="Pictures/user.png" class="img-rounded" alt="" style="height:50%;width:50%;">
                             </div>
-                            <div class="col-sm-6 col-xs-12">
-                                <button class="btn btn-lg" onClick="document.getElementById('updatereceipt').scrollIntoView();">UPLOAD RECEIPT</button>
+                            <div class="col-sm-3 col-xs-12" style="border-right: ridge;">
+                                <button class="btn btn-lg" onClick="document.getElementById('updatereceipt').scrollIntoView();">Upload Crop Receipt</button>
                                 <img src="Pictures/bill.png" class="img-rounded" alt="" style="height:50%;width:50%;">
                             </div>
                         </div>
-                    </div>
-                    <div class="panel-footer">
-                        <button class="btn btn-lg" onClick="document.getElementById('approve').scrollIntoView();">Choose to Increase Credits</button>
                     </div>
                 </div>
             </div>
@@ -712,7 +707,7 @@
                             <div class="col-sm-6">
                                 <div class="well">
                                     <h4>
-                                        Credit Score : 3.2
+                                        Rating : 3.2
                                         <span style="color: #e1ad01;float:right;" class="glyphicon glyphicon-star"></span>
                                         <span style="color: #e1ad01;float:right;" class="glyphicon glyphicon-star"></span>
                                         <span style="color: #e1ad01;float:right;" class="glyphicon glyphicon-star"></span>
@@ -803,7 +798,7 @@
 
     <!-- Notify Bank Section :Improve Credit Score -->
     <div id="notifybank" class="container-fluid">
-        <h2 class="text-center">NOTIFY BANK</h2>
+        <h2 class="text-center">NOTIFY BANK OF CROP CLEARANCE</h2>
         <div class="row">
             <div class="col-sm-4 ">
             </div>
@@ -844,7 +839,7 @@
 
     <!-- Upload Receipt: Improving Credit Score -->
     <div id="updatereceipt" class="container-fluid">
-        <h2 class="text-center">UPLOAD RECEIPT</h2>
+        <h2 class="text-center">UPLOAD CROP RECEIPT</h2>
         <div class="row">
             <div class="col-sm-4 ">
             </div>
