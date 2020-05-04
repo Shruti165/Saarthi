@@ -8,6 +8,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+
+        .modal-content {
+            width: fit-content;
+        }
+
         body {
             font: 400 15px Lato, sans-serif;
             line-height: 1.8;
@@ -289,7 +294,7 @@
                         <p>Click on Record to Get Details</p>
                         <input class="form-control" id="myInput" type="text" placeholder="Search..">
                         <br>
-                        <div class ="row">
+                        <div class="row">
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
@@ -332,271 +337,336 @@
                                 </tbody>
                             </table>
 
-                     
-                    </div>
-                    <div class="panel-footer">
-                        <button class="btn btn-lg" onClick="document.getElementById('approve').scrollIntoView();">Detailed View</button>
+
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-lg" onClick="document.getElementById('approve').scrollIntoView();">Detailed View</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
+                <div class="col-sm-3 col-xs-12">
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Container (Pricing Section) -->
-    <div id="approve" class="container-fluid bg-grey">
-        <div class="text-center">
-        </div>
-        <div class="row slideanim">
-            <div class="col-sm-3 col-xs-12">
-
+        <!-- Container (Pricing Section) -->
+        <div id="approve" class="container-fluid bg-grey">
+            <div class="text-center">
             </div>
-            <div class="col-sm-6 col-xs-12">
-                <div class="panel panel-default ">
-                    <div class="panel-heading" style="padding:5px;">
-                        <h1 class="text-center" style="font-size:20px;">APPLICATION DETAILS</h1>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-6 form-group" style="margin-bottom: 0px;">
-                                    <br>
-                                    <p><span class="glyphicon glyphicon-map-marker"></span>  Warehouse : Hapur, UP West</p>
-                                    <p><span class="glyphicon glyphicon-bookmark"></span>  Loan Type : 101</p>
-                                    <p><span class="glyphicon glyphicon-download-alt"></span> Application Type: Post-Harvest</p>
-                                    <p><span class="glyphicon glyphicon-calendar"></span>  Date : 12/2/2019</p>
+            <div class="row slideanim">
+                <div class="col-sm-3 col-xs-12">
 
-                                    <p><span class="glyphicon glyphicon-th-large"></span>  No. Of Packets : 10,000</p>
-                                    <p><span class="glyphicon glyphicon-cog"></span> Crop Quality : Medium</p>
-                                    <p><span class="glyphicon glyphicon-map-marker"></span>  Location : Hapur, UP West</p>
-                                    <p><span class="glyphicon glyphicon-phone"></span>  Phone No. 1515151515</p>
-                                    <p><span class="glyphicon glyphicon-envelope"></span> farmer@loan.com</p>
-                                    <p><span class="glyphicon glyphicon-star-empty"></span> Credit Score  <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> </p>
-                                    <textarea class="form-control" id="comments" name="comments" placeholder="Approve/Reject Reason" rows="3"></textarea><br>
-                                </div>
-                                <div class="col-sm-6 form-group" style="margin-bottom: 0px;">
-                                    <img src="Pictures/FarmerProfile.jpg" class="img-rounded" alt="" style="height:100%;width:100%;">
-                                    <p style="font-size: medium; font-weight: 900;padding-left:5%;">------ Mr Satpal Gupta ------</p>
-                                    <div class="col-sm-12 form-group">
-                                        <p>DOCUMENTS:</p>
-                                        <div class="col-sm-6 ">
-                                            <img src="Pictures/contract.png" class="img-rounded" alt="" style="height:50%;width:100%;">
-                                            <p>View Contract</p>
-                                        </div>
-                                        <div class="col-sm-6 ">
-                                            <img src="Pictures/adhar_name.png" class="img-rounded" alt="" style="height:50%;width:100%;">
-                                            <p>Aadhar Card</p>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel panel-default ">
+                        <div class="panel-heading" style="padding:5px;">
+                            <h1 class="text-center" style="font-size:20px;">APPLICATION DETAILS</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group" style="margin-bottom: 0px;">
+                                        <br>
+                                        <p><span class="glyphicon glyphicon-map-marker"></span>  Warehouse : Hapur, UP West</p>
+                                        <p><span class="glyphicon glyphicon-bookmark"></span>  Loan Type : 101</p>
+                                        <p><span class="glyphicon glyphicon-download-alt"></span> Application Type: Post-Harvest</p>
+                                        <p><span class="glyphicon glyphicon-calendar"></span>  Date : 12/2/2019</p>
+
+                                        <p><span class="glyphicon glyphicon-th-large"></span>  No. Of Packets : 10,000</p>
+                                        <p><span class="glyphicon glyphicon-cog"></span> Crop Quality : Medium</p>
+                                        <p><span class="glyphicon glyphicon-map-marker"></span>  Location : Hapur, UP West</p>
+                                        <p><span class="glyphicon glyphicon-phone"></span>  Phone No. 1515151515</p>
+                                        <p><span class="glyphicon glyphicon-envelope"></span> farmer@loan.com</p>
+                                        <p><span class="glyphicon glyphicon-star-empty"></span> Credit Score  <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> </p>
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Approve/Reject Reason" rows="3"></textarea><br>
+                                    </div>
+                                    <div class="col-sm-6 form-group" style="margin-bottom: 0px;">
+                                        <img src="Pictures/FarmerProfile.jpg" class="img-rounded" alt="" style="height:100%;width:100%;">
+                                        <p style="font-size: medium; font-weight: 900;padding-left:5%;">------ Mr Satpal Gupta ------</p>
+                                        <div class="col-sm-12 form-group">
+                                            <p>DOCUMENTS:</p>
+                                            <div class="col-sm-6 ">
+                                                <img src="Pictures/contract.png" class="img-rounded" alt="" style="height:50%;width:100%;">
+                                                <p data-toggle="modal" data-target="#receiptModal" style="color: #337ab7; cursor: pointer;">View Crop Receipt</p>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="receiptModal" role="dialog" style="margin-top:50px;">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                <h4 class="modal-title">Crop Receipt</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Crop Type : Potato</p>
+                                                                <img src="Pictures/FarmerReceipt.jpeg" class="img-rounded" alt="" style="height:200px;width:400px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 ">
+                                                <img src="Pictures/adhar_name.png" class="img-rounded" alt="" style="height:50%;width:100%;">
+                                                <p data-toggle="modal" data-target="#aadharModal" style="color: #337ab7; cursor: pointer;">Aadhar Card</p>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="aadharModal" role="dialog" style="margin-top:50px;">
+                                                    <div class="modal-dialog modal-sm">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                <h4 class="modal-title">Aadhar Card</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Farmer Name : Sattpal</p>
+                                                                <img src="Pictures/FarmerAdhar.jpg" class="img-rounded" alt="" style="height:200px;width:400px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="panel-footer text-center">
-                        <button class="btn btn-lg" style="background-color:forestgreen;" onClick="document.getElementById('notify').scrollIntoView();">Approve</button> <button class="btn btn-lg" style="background-color:red;">	&nbsp;Reject&nbsp;  </button>
+                        <div class="panel-footer text-center">
+                            <button class="btn btn-lg" style="background-color:forestgreen;" onClick="document.getElementById('notify').scrollIntoView();">Approve</button> 
+                            <button class="btn btn-lg" style="background-color:red;" onClick="document.getElementById('notifybankreject').scrollIntoView();"> 	&nbsp;Reject&nbsp;  </button>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-            </div>
-        </div>
-    </div>
-
-    <!-- Notify Bank -->
-    <div id="notify" class="container-fluid">
-        <div class="text-center">
-            <h2>Status</h2>
-            <h4>Loan Application-|101| </h4>
-        </div>
-        <div class="row slideanim">
-            <div class="col-sm-4 ">
-
-            </div>
-            <div class="col-sm-4 ">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Notification Sent</h1>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-sm-4">
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="Pictures/money-transfer.png" class="img-rounded" alt="" style="height:100%;width:100%;">
-                        </div>
-                    </div>
-                    <div class="panel-footer">
-                        <h3>Money transferred successfully.</h3>
-                        <h4>Famer notified ! Thanx for loan approval</h4>
-                        <button class="btn btn-lg">Review Repayment Details</button>
-                    </div>
+                <div class="col-sm-3 col-xs-12">
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Settings View -->
-    <div id="settings" class="container-fluid">
-        <nav class="navbar navbar-inverse visible-xs">
+        <!-- Notify Bank -->
+        <div id="notify" class="container-fluid">
+            <div class="text-center">
+                <h2>Status</h2>
+                <h4>Loan Application-|101| </h4>
+            </div>
+            <div class="row slideanim">
+                <div class="col-sm-4 ">
+
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Notification Sent</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="Pictures/money-transfer.png" class="img-rounded" alt="" style="height:100%;width:100%;">
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>Money transferred successfully.</h3>
+                            <h4>Famer notified ! Thanx for loan approval</h4>
+                            <button class="btn btn-lg">Review Repayment Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notify Bank -Reject -->
+        <div id="notifybankreject" class="container-fluid">
+            <div class="text-center">
+                <h2>Status</h2>
+                <h4>Loan Application-|101| </h4>
+            </div>
+            <div class="row slideanim">
+                <div class="col-sm-4 ">
+
+                </div>
+                <div class="col-sm-4 ">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Notification Sent</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="Pictures/dislike.png" class="img-rounded" alt="" style="height:100%;width:100%;">
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>Loan application rejected .</h3>
+                            <h4>Farmer notified ! Thanx </h4>
+                            <button class="btn btn-lg" onClick="document.getElementById('approve').scrollIntoView();">View Application</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings View -->
+        <div id="settings" class="container-fluid">
+            <nav class="navbar navbar-inverse visible-xs">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            HDFC BANK
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Dashboard</a></li>
+                            <li><a href="#">Age</a></li>
+                            <li><a href="#">Gender</a></li>
+                            <li><a href="#">Geo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        HDFC BANK
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Dashboard</a></li>
-                        <li><a href="#">Age</a></li>
-                        <li><a href="#">Gender</a></li>
-                        <li><a href="#">Geo</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                <div class="row content">
+                    <div class="col-sm-3 sidenav hidden-xs">
+                        <h2>HDFC BANK</h2>
+                        <img src="Pictures/hdfc.png" class="img-rounded" style="height:50%;width:50%;margin-bottom:20px;">
 
-        <div class="container-fluid">
-            <div class="row content">
-                <div class="col-sm-3 sidenav hidden-xs">
-                    <h2>HDFC BANK</h2>
-                    <img src="Pictures/hdfc.png" class="img-rounded" style="height:50%;width:50%;margin-bottom:20px;">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="active"><a href="#section1">Dashboard</a></li>
+                            <li><a href="#section2">Update Branch Details</a></li>
+                            <li><a href="#section3">Edit Location Details</a></li>
+                            <li><a href="#section3">Update Offers</a></li>
+                        </ul><br>
+                    </div>
+                    <br>
 
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="#section1">Dashboard</a></li>
-                        <li><a href="#section2">Update Branch Details</a></li>
-                        <li><a href="#section3">Edit Location Details</a></li>
-                        <li><a href="#section3">Update Offers</a></li>
-                    </ul><br>
-                </div>
-                <br>
+                    <div class="col-sm-9">
+                        <div class="well" style="padding-bottom:0px;">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="well">
+                                        <h4>Add Branch In Profile</h4>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Branch IFSC Code" id="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Branch Manager" id="pwd">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Account Manager" id="pwd">
+                                            </div>
+                                            <div class="dropdown">
+                                                <button style="width: 100%; background-color: #f4511e; border-color: #f4511e; " class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    Choose District
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Agra</a></li>
+                                                    <li><a href="#">Kanpur</a></li>
+                                                    <li><a href="#">Lucknow</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Email Subscription</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-default">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="well">
+                                        <h4>Add Offer </h4>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Offer Name" id="pwd">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Rate Interest" id="pwd">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown">
+                                                    <button style="width:100%;background-color:#f4511e;border-color:#f4511e;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        Applicable State
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Uttar Praedesh</a></li>
+                                                        <li><a href="#">Rajasthan</a></li>
+                                                        <li><a href="#">Maharashtra</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown">
+                                                    <button style="width:100%;background-color:#f4511e;border-color:#f4511e;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        Tenure
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">2 yr</a></li>
+                                                        <li><a href="#">3 yr</a></li>
+                                                        <li><a href="#">4 yr</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox">Inform Account Head</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-default">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
 
-                <div class="col-sm-9">
-                    <div class="well" style="padding-bottom:0px;">
+                            </div>
+                        </div>
+
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="well">
-                                    <h4>Add Branch In Profile</h4>
-                                    <form action="">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Branch IFSC Code" id="email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Branch Manager" id="pwd">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Account Manager" id="pwd">
-                                        </div>
-                                        <div class="dropdown">
-                                            <button style="width: 100%; background-color: #f4511e; border-color: #f4511e; " class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                                Choose District
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Agra</a></li>
-                                                <li><a href="#">Kanpur</a></li>
-                                                <li><a href="#">Lucknow</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox">Email Subscription</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Submit</button>
-                                    </form>
+                                    <h4>Ongoing Offers  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span></h4>
+                                    <p style="color: #337ab7;">HDFCXOXOX12</p>
+                                    <p style="color: #337ab7;">KISSANDHAN22</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="well">
-                                    <h4>Add Offer </h4>
-                                    <form action="">
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Offer Name" id="pwd">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Rate Interest" id="pwd">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="dropdown">
-                                                <button style="width:100%;background-color:#f4511e;border-color:#f4511e;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                                    Applicable State
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">Uttar Praedesh</a></li>
-                                                    <li><a href="#">Rajasthan</a></li>
-                                                    <li><a href="#">Maharashtra</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="dropdown">
-                                                <button style="width:100%;background-color:#f4511e;border-color:#f4511e;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                                    Tenure
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">2 yr</a></li>
-                                                    <li><a href="#">3 yr</a></li>
-                                                    <li><a href="#">4 yr</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox">Inform Account Head</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Submit</button>
-                                    </form>
+                                    <h4>Account Managers  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span> </h4>
+                                    <p style="color: #337ab7;">Mr Amit Gupta</p>
+                                    <p style="color: #337ab7;">Mr Rohan Sharma</p>
                                 </div>
                             </div>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="well">
-                                <h4>Ongoing Offers  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span></h4>
-                                <p style="color: #337ab7;">HDFCXOXOX12</p>
-                                <p style="color: #337ab7;">KISSANDHAN22</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="well">
-                                <h4>Account Managers  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span> </h4>
-                                <p style="color: #337ab7;">Mr Amit Gupta</p>
-                                <p style="color: #337ab7;">Mr Rohan Sharma</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="well">
-                                <h4>New Branches  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span> </h4>
-                                <p style="color: #337ab7;">HDFC0000003</p>
-                                <p style="color: #337ab7;">HDFC0000005</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <div class="well">
-                                <p>Loan Trasfer Account Details  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span></p>
-                                <p style="color: #337ab7;">1234-9087-2748-3759</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="well">
-
-                                <div class="row">
-                                    <p style="font-size:37px;margin-left:40px;" class="glyphicon glyphicon-modal-window"></p>
-                                    <p style="font-size:37px;margin-left:80px;color: #f4511e;" class="glyphicon glyphicon-file"></p>
+                            <div class="col-sm-4">
+                                <div class="well">
+                                    <h4>New Branches  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span> </h4>
+                                    <p style="color: #337ab7;">HDFC0000003</p>
+                                    <p style="color: #337ab7;">HDFC0000005</p>
                                 </div>
-                                <div class="row">
-                                    <span style="margin-left:10px;"> Upgrade License </span>
-                                    <span style="margin-left:10px;">Edit Contracts </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="well">
+                                    <p>Loan Trasfer Account Details  <span style="color: #f4511e;float:right;" class="glyphicon glyphicon-edit"></span></p>
+                                    <p style="color: #337ab7;">1234-9087-2748-3759</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well">
+
+                                    <div class="row">
+                                        <p style="font-size:37px;margin-left:40px;" class="glyphicon glyphicon-modal-window"></p>
+                                        <p style="font-size:37px;margin-left:80px;color: #f4511e;" class="glyphicon glyphicon-file"></p>
+                                    </div>
+                                    <div class="row">
+                                        <span style="margin-left:10px;"> Upgrade License </span>
+                                        <span style="margin-left:10px;">Edit Contracts </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -604,61 +674,60 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer class="container-fluid text-center">
-        <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-    </footer>
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </footer>
 
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
+                        // Store hash
+                        var hash = this.hash;
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function () {
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
                     });
-                } // End if
-            });
+                });
+            })
+        </script>
 
-            $(window).scroll(function () {
-                $(".slideanim").each(function () {
-                    var pos = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
+        <script>
+            $(document).ready(function () {
+                $("#myInput").on("keyup", function () {
+                    var value = $(this).val().toLowerCase();
+                    $("#myTable tr").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
                 });
             });
-        })
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $("#myInput").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-    </script>
+        </script>
 
 </body>
 </html>
