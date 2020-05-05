@@ -298,6 +298,7 @@
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
+                                        <th>Select</th>
                                         <th>Farmer Id</th>
                                         <th>Name</th>
                                         <th>Date</th>
@@ -307,32 +308,52 @@
                                 </thead>
                                 <tbody id="myTable">
                                     <tr>
+                                        <td>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" checked></label>
+                                            </div>
+                                        </td>
                                         <td>101</td>
                                         <td>Sattpal</td>
-                                        <td>17/12/2019</td>
+                                        <td>04/05/2020</td>
                                         <td>Prabhat</td>
-                                        <td style="color:green;">Approved</td>
+                                        <td style="color:green;">New</td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" checked></label>
+                                            </div>
+                                        </td>
                                         <td>101</td>
-                                        <td>Sattpal</td>
-                                        <td>17/12/2019</td>
-                                        <td>Prabhat</td>
-                                        <td style="color:green;">Approved</td>
+                                        <td>Rambir</td>
+                                        <td>4/1/2020</td>
+                                        <td>GT Ice and Cold</td>
+                                        <td style="color:green;">New</td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" checked></label>
+                                            </div>
+                                        </td>
                                         <td>101</td>
-                                        <td>Sattpal</td>
-                                        <td>17/12/2019</td>
-                                        <td>Prabhat</td>
-                                        <td style="color:green;">Approved</td>
+                                        <td>Shyam</td>
+                                        <td>5/2/2020</td>
+                                        <td>Greenstar</td>
+                                        <td style="color:green;">New</td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" checked></label>
+                                            </div>
+                                        </td>
                                         <td>101</td>
-                                        <td>Sattpal</td>
-                                        <td>17/12/2019</td>
+                                        <td>Nathu</td>
+                                        <td>6/3/2020</td>
                                         <td>Prabhat</td>
-                                        <td style="color:green;">Approved</td>
+                                        <td style="color:green;">New</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -382,7 +403,7 @@
                                         <textarea class="form-control" id="comments" name="comments" placeholder="Approve/Reject Reason" rows="3"></textarea><br>
                                     </div>
                                     <div class="col-sm-6 form-group" style="margin-bottom: 0px;">
-                                        <img src="Pictures/FarmerProfile.jpg" class="img-rounded" alt="" style="height:100%;width:100%;">
+                                        <img src="Pictures/farmer2.png" class="img-rounded" alt="" style="height:100%;width:100%;">
                                         <p style="font-size: medium; font-weight: 900;padding-left:5%;">------ Mr Satpal Gupta ------</p>
                                         <div class="col-sm-12 form-group">
                                             <p>DOCUMENTS:</p>
@@ -407,7 +428,7 @@
                                             </div>
                                             <div class="col-sm-6 ">
                                                 <img src="Pictures/adhar_name.png" class="img-rounded" alt="" style="height:50%;width:100%;">
-                                                <p data-toggle="modal" data-target="#aadharModal" style="color: #337ab7; cursor: pointer;">Aadhar Card</p>
+                                                <p data-toggle="modal" data-target="#aadharModal" style="color: #337ab7; cursor: pointer;"> Digital Contract</p>
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="aadharModal" role="dialog" style="margin-top:50px;">
                                                     <div class="modal-dialog modal-sm">
@@ -448,10 +469,10 @@
                 <h4>Loan Application-|101| </h4>
             </div>
             <div class="row slideanim">
-                <div class="col-sm-4 ">
+                <div class="col-sm-3 ">
 
                 </div>
-                <div class="col-sm-4 ">
+                <div class="col-sm-6 ">
                     <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h1>Notification Sent</h1>
@@ -460,14 +481,30 @@
                             <div class="col-sm-4">
                             </div>
                             <div class="col-sm-4">
-                                <img src="Pictures/money-transfer.png" class="img-rounded" alt="" style="height:100%;width:100%;">
+                                <img src="Pictures/money-transfer.png" class="img-rounded" alt="" style="height:70%;width:70%;">
                             </div>
                         </div>
                         <div class="panel-footer">
                             <h3>Money transferred successfully.</h3>
-                            <h4>Famer notified ! Thanx for loan approval</h4>
-                            <button class="btn btn-lg">Review Repayment Details</button>
+                            <h4>Ref No : XXXXX</h4>
+                            <h4>Remarks : Famer notified ! Thanx for loan approval</h4>
+                            <div class="col-sm-12">
+                                <br>
+                                <div class="col-sm-6">
+                                    <h4><b>Credit Details</b></h4>
+                                    <p>XXXX XXXX XXXX XXXX</p>
+                                    <p>Mr Sattpal</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4><b>Debit Details</b></h4>
+                                    <p>XXXX XXXX XXXX XXXX</p>
+                                    <p>HDFC BANK ACCOUNT</p>
+                                </div>
+                            </div>
                         </div>
+                            <div class="panel-footer">
+                                <img src="Pictures/upi.png" class="img-rounded" alt="" style="height:70%;width:70%;">
+                            </div>
                     </div>
                 </div>
             </div>
